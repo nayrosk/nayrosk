@@ -30,6 +30,7 @@ let my_stack = vec![
     "Node.js 💫",
     "Assembly 💾",
     "Solidity ⚡",
+    "Linux 🐧",
     "Docker 🐋",
     "Web3 / Web3.js 🌐",
     "MongoDB 🍃",
