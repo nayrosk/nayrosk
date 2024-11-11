@@ -17,9 +17,9 @@ I'm a passionate blockchain developer and open-source enthusiast, currently pion
 
 ### 🔭 Current Projects
 
-- 🔗 **comLayer**: Building a secure communication layer protocol for the megaETH blockchain
-- 📊 **evm-indexer**: Developing a high-performance Web3 event indexer in Rust
-- 🌐 Contributing to various open-source blockchain projects
+- 🔗 [**comLayer**](https://github.com/comLayer/protocol): Building a secure communication layer protocol for the megaETH blockchain
+- 📊 [**evm-indexer**](https://github.com/mrzigha/evm-indexer): Developing a high-performance Web3 event indexer in Rust
+- 🌐 Contributing to various open-source blockchain projects ([Berachain](https://github.com/mrzigha/beacon-kit), [MultiversX](https://github.com/mrzigha/mx-chain-keys-monitor-go))
 
 ### 💻 Tech Stack
 
