@@ -36,7 +36,7 @@ let my_stack = vec![
     "K8s / K9s / Helm ☸️",
     "Web3 / Web3.js 🌐",
     "MongoDB 🍃",
-    "Cybersecurity 🛡️",
+    "Cybersecurity Red Team 📛",
 ];
 ```
 
