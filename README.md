@@ -4,7 +4,7 @@
 
 #### 🛠 Building the decentralized future, one line of code at a time
 
-[![GitHub followers](https://img.shields.io/github/followers/mrzigha?style=social)](https://github.com/mrzigha)
+[![GitHub followers](https://img.shields.io/github/followers/0xHexaa?style=social)](https://github.com/0xHexaa)
 [![X Follow](https://img.shields.io/twitter/follow/0xhexAs?style=social&label=Follow%20on%20X)](https://x.com/0xhexAs)
 
 </div>
@@ -18,8 +18,8 @@ I'm a passionate blockchain developer and open-source enthusiast, currently pion
 ### 🔭 Current Projects
 
 - 🔗 [**comLayer**](https://github.com/comLayer/protocol): Building a secure communication layer protocol for the megaETH blockchain
-- 📊 [**evm-indexer**](https://github.com/mrzigha/evm-indexer): Developing a high-performance Web3 event indexer in Rust
-- 🌐 Contributing to various open-source blockchain projects ([Berachain](https://github.com/mrzigha/beacon-kit), [MultiversX](https://github.com/mrzigha/mx-chain-keys-monitor-go))
+- 📊 [**evm-indexer**](https://github.com/0xHexaa/evm-indexer): Developing a high-performance Web3 event indexer in Rust
+- 🌐 Contributing to various open-source blockchain projects ([Berachain](https://github.com/0xHexaa/beacon-kit), [MultiversX](https://github.com/0xHexaa/mx-chain-keys-monitor-go))
 
 ### 💻 Tech Stack
 
@@ -51,8 +51,8 @@ let my_stack = vec![
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=mrzigha&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mrzigha&layout=compact&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xHexaa&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xHexaa&layout=compact&theme=radical)
 
 </div>
 
