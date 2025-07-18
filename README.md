@@ -13,11 +13,10 @@
 
 ### 🚀 About Me
 
-I'm a passionate blockchain developer and open-source enthusiast, currently pioneering decentralized solutions at the intersection of Web3 and DeFi. As a Node Operator at Meria and founder of comLayer, I'm dedicated to building robust infrastructure for the next generation of decentralized applications.
+I'm a passionate blockchain developer and open-source enthusiast, currently pioneering decentralized solutions at the intersection of Web3 and DeFi. As a Node Operator at Meria I'm dedicated to building robust infrastructure for the next generation of decentralized applications.
 
 ### 🔭 Current Projects
 
-- 🔗 [**comLayer**](https://github.com/comLayer/protocol): Building a secure communication layer protocol for the megaETH blockchain
 - 📊 [**evm-indexer**](https://github.com/0xHexaa/evm-indexer): Developing a high-performance Web3 event indexer in Rust
 - 🌐 Contributing to various open-source blockchain projects ([Berachain](https://github.com/0xHexaa/beacon-kit), [MultiversX](https://github.com/0xHexaa/mx-chain-keys-monitor-go))
 
