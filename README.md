@@ -1,11 +1,11 @@
 <div align="center">
   
-# 👋 Hey there, I'm Virgil!
+# 👋 Hey there, I'm Nayrosk!
 
 #### 🛠 Building the decentralized future, one line of code at a time
 
-[![GitHub followers](https://img.shields.io/github/followers/0xHexaa?style=social)](https://github.com/0xHexaa)
-[![X Follow](https://img.shields.io/twitter/follow/0xhexAs?style=social&label=Follow%20on%20X)](https://x.com/0xhexAs)
+[![GitHub followers](https://img.shields.io/github/followers/nayrosk?style=social)](https://github.com/nayrosk)
+[![X Follow](https://img.shields.io/twitter/follow/nayrosk?style=social&label=Follow%20on%20X)](https://x.com/nayrosk)
 
 </div>
 
@@ -17,8 +17,8 @@ I'm a passionate blockchain developer and open-source enthusiast, currently pion
 
 ### 🔭 Current Projects
 
-- 📊 [**evm-indexer**](https://github.com/0xHexaa/evm-indexer): Developing a high-performance Web3 event indexer in Rust
-- 🌐 Contributing to various open-source blockchain projects ([Berachain](https://github.com/0xHexaa/beacon-kit), [MultiversX](https://github.com/0xHexaa/mx-chain-keys-monitor-go))
+- 📊 [**evm-indexer**](https://github.com/nayrosk/evm-indexer): Developing a high-performance Web3 event indexer in Rust
+- 🌐 Contributing to various open-source blockchain projects ([Berachain](https://github.com/nayrosk/beacon-kit), [MultiversX](https://github.com/nayrosk/mx-chain-keys-monitor-go))
 
 ### 💻 Tech Stack
 
@@ -50,8 +50,8 @@ let my_stack = vec![
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xHexaa&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xHexaa&layout=compact&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=nayrosk&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=nayrosk&layout=compact&theme=radical)
 
 </div>
 
@@ -69,7 +69,7 @@ Feel free to reach out!
 ### 📬 How to Reach Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/virgilg)
-[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/0xhexAs)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/nayrosk)
 
 ---
 
