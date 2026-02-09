@@ -5,6 +5,11 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+  
+concurrency:
+    group: readme-cards-${{ github.ref }}
+    cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -87,12 +92,16 @@ jobs:
           file: profile/trophy.svg
           token: ${{ secrets.PAT }}
 
-      - name: Commit cards
+      - name: Commit & push cards
         run: |
-          git config --global user.email "${{ steps.import-gpg.outputs.email }}"
-          git config --global user.name "${{ steps.import-gpg.outputs.name }}"
+          set -euo pipefail
+          git config user.email "${{ steps.import-gpg.outputs.email }}"
+          git config user.name  "${{ steps.import-gpg.outputs.name }}"
           git fetch origin main
-          git rebase origin/main
+          git checkout main
+          git pull --rebase origin main
           git add profile/*.svg
-          git commit -S -m "Update README cards" || exit 0
-          git push
+          git diff --cached --quiet && { echo "No changes"; exit 0; }
+          git commit -S -m "Update README cards"
+          git push origin HEAD:main
+
