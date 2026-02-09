@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    environment: secrets
+
     permissions:
       contents: write
 
