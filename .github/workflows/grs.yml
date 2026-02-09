@@ -31,12 +31,28 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.PAT }}
 
-      - name: Generate pin card
+      - name: Generate pin card for Pebblify
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: pin
-          options: username=readme-tools&repo=github-readme-stats
-          path: profile/pin-readme-tools-github-readme-stats.svg
+          options: username=dockermint&repo=pebblify&theme=tokyonight&hide_border=true
+          path: profile/pin-dockermint-pebblify.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate pin card for EVM Indexer
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=dockermint&repo=evm-indexer&theme=tokyonight&hide_border=true
+          path: profile/pin-nayrosk-evm-indexer.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate pin card for MX Chain Keys Monitor Go
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=nayrosk&repo=mx-chain-keys-monitor-go&theme=tokyonight&hide_border=true
+          path: profile/pin-nayrosk-mx-chain-keys-monitor-go.svg
           token: ${{ secrets.PAT }}
 
       - name: Commit cards
