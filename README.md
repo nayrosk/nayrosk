@@ -153,12 +153,12 @@
 
 <div align="center">
 
-### 👀 Profile Views
+## 👀 Profile Views
 
 ![Profile Views](https://komarev.com/ghpvc/?username=nayrosk&color=58A6FF&style=for-the-badge)
 
 
-### ⚡ Fun Fact
+## ⚡ Fun Fact
 </div>
 
 ```rust
