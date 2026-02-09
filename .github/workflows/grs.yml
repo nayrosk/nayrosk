@@ -79,10 +79,10 @@ jobs:
           username: ${{ github.repository_owner }}
           theme: monokai
           no-frame: true
-          no-bg: false
+          no-background: false
           margin-width: 4
-          row: 1
-          output_path: profile/trophy.svg
+          max-rows: 1
+          file: profile/trophy.svg
           token: ${{ secrets.PAT }}
 
       - name: Commit cards
