@@ -9,6 +9,10 @@ on:
 concurrency:
     group: readme-cards-${{ github.ref }}
     cancel-in-progress: true
+    
+permissions:
+    contents: write
+    pull-requests: write
 
 jobs:
   build:
@@ -16,13 +20,11 @@ jobs:
 
     environment: secrets
 
-    permissions:
-      contents: write
-
     steps:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Import GPG key
         id: import-gpg
@@ -92,16 +94,15 @@ jobs:
           file: profile/trophy.svg
           token: ${{ secrets.PAT }}
 
-      - name: Commit & push cards
+      - name: Commit files
         run: |
-          set -euo pipefail
           git config user.email "${{ steps.import-gpg.outputs.email }}"
           git config user.name  "${{ steps.import-gpg.outputs.name }}"
-          git fetch origin main
-          git checkout main
-          git pull --rebase origin main
           git add profile/*.svg
-          git diff --cached --quiet && { echo "No changes"; exit 0; }
           git commit -S -m "Update README cards"
-          git push origin HEAD:main
 
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PAT }}
+          force: true
