@@ -90,8 +90,8 @@
 
 ## 📊 GitHub Analytics
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nayrosk&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nayrosk&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
+<img height="180em" src="./profile/stats.svg"/>
+<img height="180em" src="./profile/top-langs.svg"/>
 
 </div>
 
@@ -99,7 +99,7 @@
 
 ## 🔥 Contribution Streak
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=nayrosk&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=nayrosk&theme=shadow-red&hide_border=true)](https://git.io/streak-stats)
 
 </div>
 
@@ -119,11 +119,14 @@
 
 ## 🌟 Featured Projects
 
+<a href="https://github.com/dockermint/pebblify">
+  <img align="center" src="./profile/pin-dockermint-pebblify.svg" />
+</a>
 <a href="https://github.com/nayrosk/evm-indexer">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nayrosk&repo=evm-indexer&theme=tokyonight&hide_border=true" />
+  <img align="center" src="./profile/pin-nayrosk-evm-indexer.svg" />
 </a>
 <a href="https://github.com/nayrosk/mx-chain-keys-monitor-go">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nayrosk&repo=mx-chain-keys-monitor-go&theme=tokyonight&hide_border=true" />
+  <img align="center" src="./profile/pin-nayrosk-mx-chain-keys-monitor-go.svg" />
 </a>
 
 </div>
