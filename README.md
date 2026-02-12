@@ -119,6 +119,9 @@
 <a href="https://github.com/dockermint/pebblify">
   <img align="center" src="./profile/pin-dockermint-pebblify.svg" />
 </a>
+<a href="https://github.com/nayrosk/crazysol">
+  <img align="center" src="./profile/pin-nayrosk-crazysol.svg" />
+</a>
 <a href="https://github.com/nayrosk/evm-indexer">
   <img align="center" src="./profile/pin-nayrosk-evm-indexer.svg" />
 </a>
