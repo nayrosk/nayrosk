@@ -3,6 +3,9 @@ name: Update README cards
 on:
   schedule:
     - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
   
@@ -80,6 +83,14 @@ jobs:
           card: pin
           options: username=nayrosk&repo=mx-chain-keys-monitor-go&theme=monokai&hide_border=true
           path: profile/pin-nayrosk-mx-chain-keys-monitor-go.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate pin card for CrazySol
+        uses: readme-tools/github-readme-stats-action@v1.1.0
+        with:
+          card: pin
+          options: username=nayrosk&repo=crazysol&theme=monokai&hide_border=true
+          path: profile/pin-nayrosk-crazysol.svg
           token: ${{ secrets.PAT }}
 
       - name: Generate trophy card
