@@ -100,7 +100,7 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">A high-performance, fault-tolerant Web3 event indexer</tspan><tspan dy="1.2em" x="25">written in Rust. This tool efficiently indexes smart</tspan><tspan dy="1.2em" x="25">contract events across multiple EVM-compatible blockchains...</tspan>
+      <tspan dy="1.2em" x="25">High-performance, fault-tolerant EVM smart contract event</tspan><tspan dy="1.2em" x="25">indexer written in Rust. Multi-chain support with</tspan><tspan dy="1.2em" x="25">WebSocket/HTTP RPC failover, circuit breaker pattern,...</tspan>
     </text>
 
     <g transform="translate(30, 75)">
