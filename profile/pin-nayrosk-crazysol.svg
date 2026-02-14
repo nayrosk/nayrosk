@@ -100,7 +100,7 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">Rust Solana program for CrazySol, an on-chain pyramid</tspan><tspan dy="1.2em" x="25">economy simulation game built with Anchor. Features bonding</tspan><tspan dy="1.2em" x="25">curve tokenomics, yield generation, multi-level referral...</tspan>
+      <tspan dy="1.2em" x="25">Rust Solana program for CrazySol, an on-chain economy</tspan><tspan dy="1.2em" x="25">simulation game built with Anchor. Features bonding curve</tspan><tspan dy="1.2em" x="25">tokenomics, yield generation, multi-level referral system,...</tspan>
     </text>
 
     <g transform="translate(30, 75)">
