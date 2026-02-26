@@ -125,8 +125,8 @@
 <a href="https://github.com/nayrosk/evm-indexer">
   <img align="center" src="./profile/pin-nayrosk-evm-indexer.svg" />
 </a>
-<a href="https://github.com/nayrosk/mx-chain-keys-monitor-go">
-  <img align="center" src="./profile/pin-nayrosk-mx-chain-keys-monitor-go.svg" />
+<a href="https://github.com/patrickjaja/claude-cowork-service">
+  <img align="center" src="./profile/pin-patrickjaja-claude-cowork-service.svg" />
 </a>
 
 </div>

@@ -74,12 +74,12 @@ jobs:
           path: profile/pin-nayrosk-evm-indexer.svg
           token: ${{ secrets.PAT }}
 
-      - name: Generate pin card for MX Chain Keys Monitor Go
+      - name: Generate pin card for Claude Cowork Service
         uses: readme-tools/github-readme-stats-action@v1.1.0
         with:
           card: pin
-          options: username=nayrosk&repo=mx-chain-keys-monitor-go&theme=monokai&hide_border=true
-          path: profile/pin-nayrosk-mx-chain-keys-monitor-go.svg
+          options: username=patrickjaja&repo=claude-cowork-service&theme=monokai&hide_border=true
+          path: profile/pin-patrickjaja-claude-cowork-service.svg
           token: ${{ secrets.PAT }}
 
       - name: Generate pin card for CrazySol
