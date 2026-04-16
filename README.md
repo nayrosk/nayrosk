@@ -122,8 +122,8 @@
 <a href="https://github.com/nayrosk/crazysol">
   <img align="center" src="./profile/pin-nayrosk-crazysol.svg" />
 </a>
-<a href="https://github.com/nayrosk/evm-indexer">
-  <img align="center" src="./profile/pin-nayrosk-evm-indexer.svg" />
+<a href="https://github.com/zeroclaw-labs/zeroclaw">
+  <img align="center" src="./profile/pin-zeroclaw-labs-zeroclaw.svg" />
 </a>
 <a href="https://github.com/patrickjaja/claude-cowork-service">
   <img align="center" src="./profile/pin-patrickjaja-claude-cowork-service.svg" />

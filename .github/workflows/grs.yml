@@ -66,12 +66,12 @@ jobs:
           path: profile/pin-dockermint-pebblify.svg
           token: ${{ secrets.PAT }}
 
-      - name: Generate pin card for EVM Indexer
+      - name: Generate pin card for ZeroClaw
         uses: readme-tools/github-readme-stats-action@v1.1.0
         with:
           card: pin
-          options: username=nayrosk&repo=evm-indexer&theme=monokai&hide_border=true
-          path: profile/pin-nayrosk-evm-indexer.svg
+          options: username=zeroclaw-labs&repo=zeroclaw&theme=monokai&hide_border=true
+          path: profile/pin-zeroclaw-labs-zeroclaw.svg
           token: ${{ secrets.PAT }}
 
       - name: Generate pin card for Claude Cowork Service
