@@ -9,11 +9,11 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Nayrosk's GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 2, Total Commits  : 746, Total PRs: 138, Total Issues: 48, Contributed to (last year): 25</desc>
+        <desc id="descId">Total Stars Earned: 2, Total Commits  : 750, Total PRs: 143, Total Issues: 55, Contributed to (last year): 25</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #eb1f6a;
+            fill: #ffffff;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           @supports(-moz-appearance: auto) {
@@ -22,7 +22,7 @@
           }
           
     .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #f1f1eb;
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #cdd6e2;
     }
     @supports(-moz-appearance: auto) {
       /* Selector detects Firefox */
@@ -33,7 +33,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #f1f1eb;
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #cdd6e2;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -46,18 +46,18 @@
     .not_bold { font-weight: 400 }
     .bold { font-weight: 700 }
     .icon {
-      fill: #e28905;
+      fill: #ff6b3d;
       display: block;
     }
 
     .rank-circle-rim {
-      stroke: #eb1f6a;
+      stroke: #ff6b3d;
       fill: none;
       stroke-width: 6;
       opacity: 0.2;
     }
     .rank-circle {
-      stroke: #eb1f6a;
+      stroke: #ff6b3d;
       stroke-dasharray: 250;
       fill: none;
       stroke-width: 6;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 156.24344943403565;
+        stroke-dashoffset: 154.57680403216833;
       }
     }
   
@@ -107,11 +107,11 @@
           data-testid="card-bg"
           x="0.5"
           y="0.5"
-          rx="4.5"
+          rx="12"
           height="99%"
           stroke="#e4e2e2"
           width="466"
-          fill="#272822"
+          fill="#090b0f"
           stroke-opacity="0"
         />
 
@@ -177,7 +177,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >746</text>
+      >750</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >138</text>
+      >143</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -207,7 +207,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >48</text>
+      >55</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
