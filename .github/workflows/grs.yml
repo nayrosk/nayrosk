@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/render_hud.py]
 
   
 concurrency:
@@ -58,12 +61,17 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.PAT }}
 
+      - name: Render HUD cards
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: python3 scripts/render_hud.py
+
       - name: Commit files
         run: |
           git config user.email "${{ steps.import-gpg.outputs.email }}"
           git config user.name  "${{ steps.import-gpg.outputs.name }}"
-          git add profile/*.svg
-          git commit -S -m "Update README cards"
+          git add profile/*.svg profile/hud/*.svg
+          git diff --cached --quiet || git commit -S -m "Update README cards"
 
       - name: Push changes
         uses: ad-m/github-push-action@master

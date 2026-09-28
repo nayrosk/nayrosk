@@ -5,7 +5,16 @@ Style follows nayrosk/orbital-hud: black canvas, monospace type, hairline
 white chrome, color reserved for data domains.
 
 Usage: python3 scripts/render_hud.py   (writes into profile/hud/)
+
+Card tags can hold {placeholders} filled from live sources (crates.io, the
+GitHub API). Set GH_TOKEN to avoid the anonymous rate limit. When a source
+fails, the value from LIVE_DEFAULTS is used so rendering never breaks.
 """
+import json
+import os
+import sys
+import urllib.parse
+import urllib.request
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -207,7 +216,7 @@ PROJECTS = [
             "model: generate questions, capture reasoning,",
             "fine-tune with Axolotl locally, over SSH or Runpod.",
         ],
-        "tags": ["crates.io v0.3.1", "ratatui tui", "ci"],
+        "tags": ["crates.io v{overbrainer_version}", "ratatui tui", "ci"],
     },
     {
         "slug": "pebblify",
@@ -219,7 +228,7 @@ PROJECTS = [
             "Cosmos/CometBFT nodes. Adaptive batching,",
             "checkpoint recovery and data verification.",
         ],
-        "tags": ["v0.4.3", "180+ commits", "60+ prs"],
+        "tags": ["{pebblify_release}", "{pebblify_commits}+ commits", "{pebblify_prs}+ prs"],
     },
     {
         "slug": "evm-indexer",
@@ -272,7 +281,7 @@ PROJECTS = [
 ]
 
 
-def card(i, p):
+def card(i, p, live):
     w, h, uid = 600, 230, f"c{i}"
     col = DOMAIN[p["domain"]]
     lines = "".join(
@@ -281,7 +290,7 @@ def card(i, p):
     )
     tags, x = [], 28
     for t in p["tags"]:
-        label = t.upper()
+        label = t.format_map(live).upper()
         tw = text_w(label, 10, 0.08) + 18
         tags.append(
             f'<rect x="{x}" y="186" width="{tw:.0f}" height="22" rx="11" fill="none" stroke="{LINE}"/>'
@@ -359,6 +368,61 @@ def contact():
     return svg(w, h, body, "Contact: linktr.ee/nayrosk")
 
 
+# --------------------------------------------------------------------------
+# Live values
+# --------------------------------------------------------------------------
+
+GH_USER = "nayrosk"
+
+LIVE_DEFAULTS = {
+    "overbrainer_version": "0.3.1",
+    "pebblify_release": "v0.4.3",
+    "pebblify_commits": "180",
+    "pebblify_prs": "60",
+}
+
+
+def get_json(url):
+    headers = {"User-Agent": f"{GH_USER}-profile-render", "Accept": "application/json"}
+    token = os.environ.get("GH_TOKEN")
+    if token and url.startswith("https://api.github.com/"):
+        headers["Authorization"] = f"Bearer {token}"
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=15) as r:
+        return json.load(r)
+
+
+def floor10(n):
+    """Round down to a multiple of ten so the cards do not churn daily."""
+    return str(n // 10 * 10)
+
+
+def gh_search_count(kind, query):
+    q = urllib.parse.quote(query, safe=":/")
+    return get_json(f"https://api.github.com/search/{kind}?q={q}&per_page=1")["total_count"]
+
+
+LIVE_SOURCES = {
+    "overbrainer_version": lambda: get_json(
+        "https://crates.io/api/v1/crates/overbrainer")["crate"]["max_version"],
+    "pebblify_release": lambda: get_json(
+        "https://api.github.com/repos/Dockermint/pebblify/releases/latest")["tag_name"],
+    "pebblify_commits": lambda: floor10(gh_search_count(
+        "commits", f"author:{GH_USER} repo:Dockermint/pebblify")),
+    "pebblify_prs": lambda: floor10(gh_search_count(
+        "issues", f"type:pr author:{GH_USER} repo:Dockermint/pebblify")),
+}
+
+
+def fetch_live():
+    live = dict(LIVE_DEFAULTS)
+    for key, source in LIVE_SOURCES.items():
+        try:
+            live[key] = str(source())
+        except Exception as e:  # network, rate limit, schema change
+            print(f"warning: {key}: {e}; using {live[key]}", file=sys.stderr)
+    return live
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     files = {
@@ -371,8 +435,9 @@ def main():
         "section-telemetry.svg": section(4, "Telemetry", "auto-updated daily"),
         "section-contact.svg": section(5, "Contact"),
     }
+    live = fetch_live()
     for i, p in enumerate(PROJECTS):
-        files[f"card-{p['slug']}.svg"] = card(i, p)
+        files[f"card-{p['slug']}.svg"] = card(i, p, live)
     for name, content in files.items():
         (OUT / name).write_text(content)
     print(f"wrote {len(files)} files to {OUT}")
