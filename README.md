@@ -1,183 +1,60 @@
-<div align="center">
+<p align="center">
+  <img src="./profile/hud/banner.svg" width="100%" alt="Nayrosk — Rust engineer, blockchain infra and LLM tooling"/>
+</p>
 
-# Hey there! I'm Nayrosk 👋
+I build **Rust systems** where reliability is the whole point: node tooling and indexers for blockchains, and CLIs that make LLM workflows reproducible. I run [Dockermint](https://dockermint.io), where I operate nodes and ship the tools we need to do it well.
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=30&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Rust+Blockchain+Developer;Open+Source+Enthusiast;Tech+Stack+Explorer)](https://git.io/typing-svg)
+Open to **full-time roles**, **freelance missions** and **OSS collaboration**, remote or around Marseille.
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
+<br/>
 
-</div>
+<img src="./profile/hud/section-work.svg" width="100%" alt="01 · Featured work"/>
 
+<p align="center">
+  <a href="https://github.com/nayrosk/overbrainer"><img src="./profile/hud/card-overbrainer.svg" width="49%" alt="overbrainer"/></a>
+  <a href="https://github.com/Dockermint/pebblify"><img src="./profile/hud/card-pebblify.svg" width="49%" alt="pebblify"/></a>
+  <a href="https://github.com/nayrosk/evm-indexer"><img src="./profile/hud/card-evm-indexer.svg" width="49%" alt="evm-indexer"/></a>
+  <a href="https://github.com/nayrosk/Fake-Recruiter-Malware-Analysis"><img src="./profile/hud/card-malware-analysis.svg" width="49%" alt="The take-home was the malware"/></a>
+  <a href="https://github.com/nayrosk/nayrosk-skills-marketplace"><img src="./profile/hud/card-skills-marketplace.svg" width="49%" alt="nayrosk-skills-marketplace"/></a>
+  <a href="https://github.com/nayrosk/crazysol"><img src="./profile/hud/card-crazysol.svg" width="49%" alt="crazysol"/></a>
+</p>
 
-<div align="center">
+<br/>
 
-## 🚀 Tech Stack Arsenal
+<img src="./profile/hud/section-upstream.svg" width="100%" alt="02 · Upstream contributions"/>
 
-</div>
+| Project | Stars | Merged |
+| :-- | :-- | :-- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | ![stars](https://img.shields.io/github/stars/openclaw/openclaw?style=flat-square&label=%E2%98%85&color=090b0f&labelColor=090b0f) | [fix(ui): bypass service worker for top-level navigations](https://github.com/openclaw/openclaw/pull/87077) |
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw?style=flat-square&label=%E2%98%85&color=090b0f&labelColor=090b0f) | [fix(cargo): cascade observability-prometheus to gateway crate](https://github.com/zeroclaw-labs/zeroclaw/pull/5758) |
+| [patrickjaja/claude-cowork-service](https://github.com/patrickjaja/claude-cowork-service) | ![stars](https://img.shields.io/github/stars/patrickjaja/claude-cowork-service?style=flat-square&label=%E2%98%85&color=090b0f&labelColor=090b0f) | Arch Linux packaging: [#1](https://github.com/patrickjaja/claude-cowork-service/pull/1), [#4](https://github.com/patrickjaja/claude-cowork-service/pull/4), [#6](https://github.com/patrickjaja/claude-cowork-service/pull/6) |
 
-<div align="center">
+In review: sandbox `capAdd` support in [openclaw#150307](https://github.com/openclaw/openclaw/pull/150307), low-level interaction endpoints in [camofox-browser#4210](https://github.com/jo-inc/camofox-browser/pull/4210), a distroless multi-arch image in [mx-chain-simulator-go#212](https://github.com/multiversx/mx-chain-simulator-go/pull/212).
 
-### 💻 Core Languages
-[![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](#)
-[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=fff)](#)
-[![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](#)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](#)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](#)
-[![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](#)
-[![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=fff)](#)
-[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=306998)](#)
-[![Zig](https://img.shields.io/badge/Zig-F7A41D?style=for-the-badge&logo=zig&logoColor=fff)](#)
-[![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=Go&logoColor=white)](#)
+<br/>
 
-### 💸​ Cryptocurrencies
-[![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=fff)](#)
-[![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white)](#)
-[![Bitcoin](https://img.shields.io/badge/Bitcoin-FF9900?style=for-the-badge&logo=bitcoin&logoColor=white)](#)
-[![Monero](https://img.shields.io/badge/Monero-F60?style=for-the-badge&logo=monero&logoColor=fff)](#)
+<img src="./profile/hud/section-stack.svg" width="100%" alt="03 · Stack"/>
 
-### 🎨 Frontend Mastery
-[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](#)
-[![CSS](https://img.shields.io/badge/CSS-639?style=for-the-badge&logo=css&logoColor=fff)](#)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=fff)](#)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](#)
+<p align="center">
+  <img src="./profile/hud/stack.svg" width="100%" alt="Stack: Rust, C, Go, Zig; Solana, EVM, Cosmos, MultiversX; Claude Code, Axolotl, Runpod; Docker, Kubernetes, Terraform; PostgreSQL, Redis, MongoDB; TypeScript, React"/>
+</p>
 
-### ⚡ Backend Power
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](#)
-[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](#)
-[![FastAPI](https://img.shields.io/badge/FastAPI-109989?style=for-the-badge&logo=FASTAPI&logoColor=white)](#)
-[![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)](#)
-[![tRPC](https://img.shields.io/badge/tRPC-2596BE?style=for-the-badge&logo=trpc&logoColor=white)](#)
+<br/>
 
-### 🛢️ Data & Storage
-[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](#)
-[![Redis](https://img.shields.io/badge/Redis-DD0031?style=for-the-badge&logo=redis&logoColor=white)](#)
+<img src="./profile/hud/section-telemetry.svg" width="100%" alt="04 · Telemetry"/>
 
-### ☁️ Cloud & DevOps
-[![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)](#)
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](#)
-[![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=fff)](#)
-[![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](#)
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](#)
-[![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=fff)](#)
+<p align="center">
+  <img src="./profile/stats.svg" height="170" alt="GitHub stats"/>
+  <img src="./profile/top-langs.svg" height="170" alt="Top languages"/>
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=nayrosk&background=090B0F&ring=FF6B3D&fire=FF6B3D&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FF6B3D&sideLabels=7C8595&dates=7C8595&stroke=FFFFFF24&hide_border=true&border_radius=12" height="170" alt="Contribution streak"/>
+</p>
 
-### 🛠️ Tools & Ecosystem
-[![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](#)
-[![Vim](https://img.shields.io/badge/Vim-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white)](#)
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](#)
-[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)](#)
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](#)
+<br/>
 
-### ⚙️​ My Setup
-[![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=fff)](#)
-[![KDE Plasma](https://img.shields.io/badge/KDE%20Plasma-1D99F3?style=for-the-badge&logo=kdeplasma&logoColor=fff)](#)
-[![Zsh](https://img.shields.io/badge/Zsh-F15A24?style=for-the-badge&logo=zsh&logoColor=fff)](#)
+<img src="./profile/hud/section-contact.svg" width="100%" alt="05 · Contact"/>
 
-### 🤖 Artificial Intelligences
-
-[![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=fff)](#)
-[![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)](#)
-[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000?style=for-the-badge&logo=githubcopilot&logoColor=fff)](#)
-
-</div>
-
-
-<div align="center">
-
-## 📊 GitHub Analytics
-
-<img height="180em" src="./profile/stats.svg"/>
-<img height="180em" src="./profile/top-langs.svg"/>
-
-</div>
-
-<div align="center">
-
-
-## 🔥 Contribution Streak
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=nayrosk&theme=shadow-red&hide_border=true)](https://git.io/streak-stats)
-
-</div>
-
-
-<div align="center">
-
-## 🏆 GitHub Trophies
-
-[![trophy](./profile/trophy.svg)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
-
-<div align="center">
-
-## 🌟 Featured Projects
-
-<a href="https://github.com/dockermint/pebblify">
-  <img align="center" src="./profile/pin-dockermint-pebblify.svg" />
-</a>
-<a href="https://github.com/nayrosk/crazysol">
-  <img align="center" src="./profile/pin-nayrosk-crazysol.svg" />
-</a>
-<a href="https://github.com/zeroclaw-labs/zeroclaw">
-  <img align="center" src="./profile/pin-zeroclaw-labs-zeroclaw.svg" />
-</a>
-<a href="https://github.com/patrickjaja/claude-cowork-service">
-  <img align="center" src="./profile/pin-patrickjaja-claude-cowork-service.svg" />
-</a>
-
-</div>
-
-
-<div align="center">
-
-## 🤝 Connect With Me
-
-**Open to collaborations, blockchain infra, and crazy ideas ⚡**
-
-<a href="https://linktr.ee/nayrosk">
-  <img src="https://img.shields.io/badge/All%20My%20Links-1de9b6?style=for-the-badge&logo=linktree&logoColor=white"/>
-</a>
-
-</div>
-
-
-<div align="center">
-
-## 💡 Random Dev Quote
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
-
-</div>
-
-
-<div align="center">
-
-## 👀 Profile Views
-
-![Profile Views](https://komarev.com/ghpvc/?username=nayrosk&color=58A6FF&style=for-the-badge)
-
-
-## ⚡ Fun Fact
-</div>
-
-```rust
-fn main() {
-    println!("Coffee to Code ratio: ∞:1");
-}
-```
-
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="400">
-
----
-
-<div align="center">
-  
-**Thanks for visiting my profile! Feel free to explore my repositories and don't hesitate to reach out!** 🚀
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&animation=twinkling"/>
-
-</div>
+<p align="center">
+  <a href="https://linktr.ee/nayrosk"><img src="./profile/hud/contact.svg" width="100%" alt="Contact: linktr.ee/nayrosk"/></a>
+</p>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="48" viewBox="0 0 1200 48" role="img" aria-label="Stack">
+<title>Stack</title>
+<style>
+  text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;}
+  .eyebrow{font-size:11px;letter-spacing:.2em;fill:#7c8595}
+  .pulse{animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.25}}
+  .scan{animation:scan 7s linear infinite}
+  @keyframes scan{from{transform:translateY(-60px)}to{transform:translateY(var(--h))}}
+  
+</style>
+<text x="2" y="30" font-size="13" letter-spacing=".24em" fill="#eef2f7">03 · STACK</text><line x1="129" y1="25.5" x2="1170" y2="25.5" stroke="rgba(255,255,255,.14)"/><text x="1198" y="29" text-anchor="end" font-size="11" letter-spacing=".16em" fill="#7c8595"></text>
+</svg>

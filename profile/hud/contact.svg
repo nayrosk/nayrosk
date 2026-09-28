@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="Contact: linktr.ee/nayrosk">
+<title>Contact: linktr.ee/nayrosk</title>
+<style>
+  text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;}
+  .eyebrow{font-size:11px;letter-spacing:.2em;fill:#7c8595}
+  .pulse{animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.25}}
+  .scan{animation:scan 7s linear infinite}
+  @keyframes scan{from{transform:translateY(-60px)}to{transform:translateY(var(--h))}}
+  
+</style>
+<defs>
+  <pattern id="lines-contact" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="rgba(255,255,255,.03)"/>
+  </pattern>
+  <radialGradient id="vig-contact" cx="50%" cy="50%" r="75%">
+    <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity=".7"/>
+  </radialGradient>
+  <linearGradient id="band-contact" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#fff" stop-opacity=".035"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="clip-contact"><rect width="1200" height="120" rx="12"/></clipPath>
+</defs>
+<rect width="1200" height="120" rx="12" fill="#000"/><rect x=".5" y=".5" width="1199" height="119" rx="11.5" fill="#090b0f" stroke="rgba(255,255,255,.14)"/><line x1="12" y1="1.5" x2="1188" y2="1.5" stroke="rgba(255,255,255,.05)"/>
+<path d="M12 18V12H18" stroke="#7c8595" stroke-width="1" fill="none" opacity=".6"/><path d="M1182 12H1188V18" stroke="#7c8595" stroke-width="1" fill="none" opacity=".6"/><path d="M12 102V108H18" stroke="#7c8595" stroke-width="1" fill="none" opacity=".6"/><path d="M1182 108H1188V102" stroke="#7c8595" stroke-width="1" fill="none" opacity=".6"/>
+<circle class="pulse" cx="44" cy="56" r="5" fill="#3fdc7e"/>
+<text x="62" y="52" class="eyebrow">CHANNEL OPEN</text>
+<text x="62" y="80" font-size="22" fill="#fff">linktr.ee/nayrosk</text>
+<text x="1156" y="60" text-anchor="end" font-size="13" fill="#cdd6e2">Hiring, freelance work or an OSS idea?</text>
+<text x="1156" y="82" text-anchor="end" font-size="13" fill="#7c8595">Every link to reach me is one click away  ↗</text>
+<g clip-path="url(#clip-contact)" pointer-events="none">
+  <rect width="1200" height="120" fill="url(#lines-contact)"/>
+  <rect class="scan" style="--h:180px" width="1200" height="60" fill="url(#band-contact)"/>
+  <rect width="1200" height="120" fill="url(#vig-contact)"/>
+</g>
+</svg>
