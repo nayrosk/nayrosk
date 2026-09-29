@@ -160,7 +160,7 @@ def banner():
             f'<text x="{lx + 12}" y="{y}" font-size="10" letter-spacing=".16em" fill="{DIM}">{name}</text>'
         )
 
-    tagline = "Rust engineer — blockchain infra & LLM tooling"
+    tagline = "SRE · Rust engineer — blockchain infra & LLM tooling"
     cursor_x = 64 + text_w(tagline, 20) + 6
 
     body = f"""{defs(w, h, uid)}
@@ -174,13 +174,13 @@ def banner():
 <line x1="64" y1="232" x2="700" y2="232" stroke="{LINE}"/>
 <circle class="pulse" cx="70" cy="262" r="4" fill="#3fdc7e"/>
 <text x="84" y="266" font-size="11" letter-spacing=".16em" fill="{DIM}">OPEN TO · FULL-TIME · FREELANCE · OSS COLLABORATION</text>
-<text x="64" y="290" font-size="11" letter-spacing=".16em" fill="{DIM}">CEO @ DOCKERMINT · NODE OPERATOR</text>
+<text x="64" y="290" font-size="11" letter-spacing=".16em" fill="{DIM}">NODE OPERATOR</text>
 {''.join(orbit_svg)}
 {core}
 {''.join(legend)}
 {crt(w, h, uid)}"""
     extra = ".blink{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}"
-    return svg(w, h, body, "Nayrosk — Rust engineer, blockchain infra and LLM tooling", extra)
+    return svg(w, h, body, "Nayrosk — SRE and Rust engineer, blockchain infra and LLM tooling", extra)
 
 
 # --------------------------------------------------------------------------

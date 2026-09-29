@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./profile/hud/banner.svg" width="100%" alt="Nayrosk — Rust engineer, blockchain infra and LLM tooling"/>
+  <img src="./profile/hud/banner.svg" width="100%" alt="Nayrosk — SRE and Rust engineer, blockchain infra and LLM tooling"/>
 </p>
 
-I build **Rust systems** where reliability is the whole point: node tooling and indexers for blockchains, and CLIs that make LLM workflows reproducible. I run [Dockermint](https://dockermint.io), where I operate nodes and ship the tools we need to do it well.
+I build **Rust systems** where reliability is the whole point: node tooling and indexers for blockchains, and CLIs that make LLM workflows reproducible. I run [Dockermint](https://dockermint.io), where I operate nodes and ship the tools we need to do it well, and I co-founded [goodcharge](https://goodcharge.app), a free, independent app that compares the real price per kWh of EV charging stations around you.
 
 Open to **full-time roles**, **freelance missions** and **OSS collaboration**, remote or around Marseille.
 
