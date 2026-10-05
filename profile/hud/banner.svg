@@ -29,7 +29,7 @@
 <path d="M14 22V14H22" stroke="#7c8595" stroke-width="1" fill="none" opacity=".6"/><path d="M1178 14H1186V22" stroke="#7c8595" stroke-width="1" fill="none" opacity=".6"/><path d="M14 298V306H22" stroke="#7c8595" stroke-width="1" fill="none" opacity=".6"/><path d="M1178 306H1186V298" stroke="#7c8595" stroke-width="1" fill="none" opacity=".6"/>
 <text x="64" y="70" class="eyebrow">// PROFILE · MARSEILLE, FR</text>
 <text x="64" y="150" font-size="64" font-weight="700" letter-spacing=".22em" fill="#fff">NAYROSK</text>
-<text x="64" y="196" font-size="20" fill="#cdd6e2">SRE · Rust engineer · blockchain infra · LLMOps</text>
+<text x="64" y="196" font-size="20" fill="#cdd6e2">SRE · Rust engineer · Blockchain infra · LLMOps</text>
 <rect class="blink" x="634" y="180" width="11" height="20" fill="#ff6b3d"/>
 <line x1="64" y1="232" x2="700" y2="232" stroke="rgba(255,255,255,.14)"/>
 <circle class="pulse" cx="70" cy="262" r="4" fill="#3fdc7e"/>

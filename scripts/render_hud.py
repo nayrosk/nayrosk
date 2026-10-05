@@ -162,7 +162,7 @@ def banner():
             f'<text x="{lx + 12}" y="{y}" font-size="10" letter-spacing=".16em" fill="{DIM}">{name}</text>'
         )
 
-    tagline = "SRE · Rust engineer · blockchain infra · LLMOps"
+    tagline = "SRE · Rust engineer · Blockchain infra · LLMOps"
     cursor_x = 64 + text_w(tagline, 20) + 6
 
     body = f"""{defs(w, h, uid)}
