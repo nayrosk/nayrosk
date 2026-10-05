@@ -35,6 +35,7 @@ DOMAIN = {
     "chain": "#3fe0ff",
     "ai": "#ff66d8",
     "sec": "#ffc24d",
+    "sre": "#3fdc7e",
 }
 
 CHAR_W = 0.6  # monospace advance, in em
@@ -128,9 +129,10 @@ def banner():
 
     cx, cy = 940, 168
     orbits = [
+        (182, 70, 8, DOMAIN["sre"], 24, "SRE"),
         (150, 56, -14, DOMAIN["rust"], 18, "RUST SYSTEMS"),
         (118, 40, 22, DOMAIN["chain"], 12, "BLOCKCHAIN INFRA"),
-        (86, 28, -38, DOMAIN["ai"], 9, "LLM TOOLING"),
+        (86, 28, -38, DOMAIN["ai"], 9, "LLMOPS"),
     ]
     orbit_svg = []
     for i, (rx, ry, rot, col, dur, _) in enumerate(orbits):
@@ -148,11 +150,11 @@ def banner():
         f'<circle cx="{cx}" cy="{cy}" r="26" fill="#0d1117" stroke="rgba(255,255,255,.35)"/>'
         f'<circle cx="{cx}" cy="{cy}" r="34" fill="none" stroke="{LINE2}"/>'
         f'<text x="{cx}" y="{cy + 4}" text-anchor="middle" font-size="11" '
-        f'letter-spacing=".2em" fill="{TXT}">NRK</text>'
+        f'letter-spacing=".2em" fill="{TXT}">NRSK</text>'
     )
 
     legend = []
-    lx, ly = 1000, 250
+    lx, ly = 1000, 236
     for i, (*_, col, _d, name) in enumerate(orbits):
         y = ly + i * 18
         legend.append(
@@ -160,7 +162,7 @@ def banner():
             f'<text x="{lx + 12}" y="{y}" font-size="10" letter-spacing=".16em" fill="{DIM}">{name}</text>'
         )
 
-    tagline = "SRE · Rust engineer — blockchain infra & LLM tooling"
+    tagline = "SRE · Rust engineer · blockchain infra · LLMOps"
     cursor_x = 64 + text_w(tagline, 20) + 6
 
     body = f"""{defs(w, h, uid)}
@@ -174,13 +176,12 @@ def banner():
 <line x1="64" y1="232" x2="700" y2="232" stroke="{LINE}"/>
 <circle class="pulse" cx="70" cy="262" r="4" fill="#3fdc7e"/>
 <text x="84" y="266" font-size="11" letter-spacing=".16em" fill="{DIM}">OPEN TO · FULL-TIME · FREELANCE · OSS COLLABORATION</text>
-<text x="64" y="290" font-size="11" letter-spacing=".16em" fill="{DIM}">NODE OPERATOR</text>
 {''.join(orbit_svg)}
 {core}
 {''.join(legend)}
 {crt(w, h, uid)}"""
     extra = ".blink{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}"
-    return svg(w, h, body, "Nayrosk — SRE and Rust engineer, blockchain infra and LLM tooling", extra)
+    return svg(w, h, body, "Nayrosk — SRE, Rust engineer, blockchain infra, LLMOps", extra)
 
 
 # --------------------------------------------------------------------------
