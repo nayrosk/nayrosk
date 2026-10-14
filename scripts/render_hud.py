@@ -370,6 +370,73 @@ def contact():
 
 
 # --------------------------------------------------------------------------
+# Sponsor
+# --------------------------------------------------------------------------
+
+HEART = "#ff4d8d"
+
+
+def heart(x, y, s):
+    """Heart outline centered on (x, y), s px wide."""
+    k = s / 24
+    d = (
+        "M12 21.4 10.6 20.1C5.4 15.4 2 12.3 2 8.5 2 5.4 4.4 3 7.5 3c1.7 0 3.4.8 4.5 2.1"
+        "C13.1 3.8 14.8 3 16.5 3 19.6 3 22 5.4 22 8.5c0 3.8-3.4 6.9-8.6 11.6z"
+    )
+    return f'<path transform="translate({x - 12 * k:.1f} {y - 12 * k:.1f}) scale({k:.3f})" d="{d}"'
+
+
+def sponsor():
+    w, h, uid = 1200, 150, "sponsor"
+    url = f"github.com/sponsors/{GH_USER}"
+    # ECG trace: flat, P wave, QRS spike, T wave, flat. Doubles as an SRE wink.
+    x0, base = 500, 78
+    pts = [(0, 0), (60, 0), (72, -6), (84, 0), (100, 0), (108, 8), (118, -40),
+           (128, 22), (136, 0), (156, 0), (172, -10), (188, 0), (250, 0),
+           (262, -6), (274, 0), (290, 0), (298, 8), (308, -40), (318, 22),
+           (326, 0), (346, 0), (362, -10), (378, 0), (420, 0)]
+    trace = " ".join(f"{x0 + x},{base + y}" for x, y in pts)
+    cta_w, cta_h = 180, 44
+    cta_x, cta_y = w - 44 - cta_w, (h - cta_h) / 2
+    body = f"""{defs(w, h, uid)}
+<defs>
+  <linearGradient id="fade-{uid}" x1="0" x2="1">
+    <stop offset="0" stop-color="{HEART}" stop-opacity="0"/>
+    <stop offset=".5" stop-color="{HEART}" stop-opacity="1"/>
+    <stop offset="1" stop-color="{HEART}" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+{panel(w, h, uid)}
+<rect x="1" y="1" width="{w - 2}" height="3" rx="1.5" fill="url(#fade-{uid})" clip-path="url(#clip-{uid})"/>
+{corner_ticks(w, h, 12, 6)}
+<g class="beat" style="transform-origin:52px 66px">{heart(52, 66, 26)} fill="{HEART}"/></g>
+{heart(52, 66, 26)} fill="none" stroke="{HEART}" opacity=".35" class="ring" style="transform-origin:52px 66px"/>
+<text x="84" y="56" class="eyebrow">// FUNDING · GITHUB SPONSORS</text>
+<text x="84" y="84" font-size="22" fill="#fff">{url}</text>
+<text x="84" y="112" font-size="13" fill="{BODY}">Sponsorships keep these tools maintained</text>
+<text x="84" y="130" font-size="13" fill="{DIM}">and free for everyone.</text>
+<polyline points="{trace}" fill="none" stroke="{LINE}" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline class="ecg" points="{trace}" fill="none" stroke="{HEART}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="{x0}" y="{base + 50}" font-size="10" letter-spacing=".16em" fill="{DIM}">UPTIME · POWERED BY SPONSORS</text>
+<rect x="{cta_x}" y="{cta_y}" width="{cta_w}" height="{cta_h}" rx="22" fill="{HEART}" fill-opacity=".12" stroke="{HEART}"/>
+<rect class="halo" x="{cta_x}" y="{cta_y}" width="{cta_w}" height="{cta_h}" rx="22" fill="none" stroke="{HEART}" style="transform-origin:{cta_x + cta_w / 2:.0f}px {cta_y + cta_h / 2:.0f}px"/>
+{heart(cta_x + 34, h / 2, 16)} fill="{HEART}"/>
+<text x="{cta_x + 52}" y="{h / 2 + 5:.0f}" font-size="14" font-weight="700" letter-spacing=".2em" fill="#fff">SPONSOR ↗</text>
+{crt(w, h, uid)}"""
+    extra = (
+        ".beat{animation:beat 1.6s ease-in-out infinite}"
+        "@keyframes beat{0%,40%,100%{transform:scale(1)}10%{transform:scale(1.18)}25%{transform:scale(1.08)}}"
+        ".ring{animation:ring 1.6s ease-out infinite}"
+        "@keyframes ring{0%{transform:scale(1);opacity:.5}70%,100%{transform:scale(1.9);opacity:0}}"
+        ".ecg{stroke-dasharray:90 900;animation:ecg 3.2s linear infinite}"
+        "@keyframes ecg{from{stroke-dashoffset:990}to{stroke-dashoffset:0}}"
+        ".halo{animation:halo 2.4s ease-out infinite}"
+        "@keyframes halo{0%{transform:scale(1);opacity:.6}80%,100%{transform:scale(1.12,1.35);opacity:0}}"
+    )
+    return svg(w, h, body, f"Sponsor Nayrosk on GitHub Sponsors: {url}", extra)
+
+
+# --------------------------------------------------------------------------
 # Live values
 # --------------------------------------------------------------------------
 
@@ -435,6 +502,8 @@ def main():
         "section-stack.svg": section(3, "Stack"),
         "section-telemetry.svg": section(4, "Telemetry", "auto-updated daily"),
         "section-contact.svg": section(5, "Contact"),
+        "section-sponsor.svg": section(6, "Sponsor", "github sponsors"),
+        "sponsor.svg": sponsor(),
     }
     live = fetch_live()
     for i, p in enumerate(PROJECTS):

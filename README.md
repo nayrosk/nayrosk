@@ -58,3 +58,11 @@ In review: sandbox `capAdd` support in [openclaw#150307](https://github.com/open
 <p align="center">
   <a href="https://linktr.ee/nayrosk"><img src="./profile/hud/contact.svg" width="100%" alt="Contact: linktr.ee/nayrosk"/></a>
 </p>
+
+<br/>
+
+<img src="./profile/hud/section-sponsor.svg" width="100%" alt="06 · Sponsor"/>
+
+<p align="center">
+  <a href="https://github.com/sponsors/nayrosk"><img src="./profile/hud/sponsor.svg" width="100%" alt="Sponsor Nayrosk on GitHub Sponsors"/></a>
+</p>
