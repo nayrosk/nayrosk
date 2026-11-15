@@ -3,6 +3,8 @@ name: Update README cards
 on:
   schedule:
     - cron: "0 0 * * *"
+    # Safety net: scheduled runs are often delayed by hours, run again midday
+    - cron: "0 12 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -24,14 +26,14 @@ jobs:
     environment: secrets
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false
 
       - name: Import GPG key
         id: import-gpg
-        uses: crazy-max/ghaction-import-gpg@v4
+        uses: crazy-max/ghaction-import-gpg@v7.0.0
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
@@ -46,7 +48,7 @@ jobs:
           echo "email:       ${{ steps.import-gpg.outputs.email }}"
 
       - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@v1.1.0
+        uses: readme-tools/github-readme-stats-action@v2.1.0
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&border_radius=12&bg_color=090b0f&title_color=ffffff&text_color=cdd6e2&icon_color=ff6b3d&ring_color=ff6b3d
@@ -54,7 +56,7 @@ jobs:
           token: ${{ secrets.PAT }}
 
       - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1.1.0
+        uses: readme-tools/github-readme-stats-action@v2.1.0
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&border_radius=12&bg_color=090b0f&title_color=ffffff&text_color=cdd6e2&icon_color=ff6b3d&ring_color=ff6b3d
@@ -70,11 +72,14 @@ jobs:
         run: |
           git config user.email "${{ steps.import-gpg.outputs.email }}"
           git config user.name  "${{ steps.import-gpg.outputs.name }}"
-          git add profile/*.svg profile/hud/*.svg
-          git diff --cached --quiet || git commit -S -m "Update README cards"
+          # Always commit, even when the cards are unchanged, so the daily
+          # contribution never depends on the SVG output changing.
+          date -u +%Y-%m-%dT%H:%M:%SZ > profile/.last-update
+          git add profile/*.svg profile/hud/*.svg profile/.last-update
+          git commit -S -m "Update README cards"
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@v1.3.0
         with:
           github_token: ${{ secrets.PAT }}
           branch: ${{ github.ref_name }}

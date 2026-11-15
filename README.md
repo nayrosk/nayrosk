@@ -29,7 +29,7 @@ Open to **full-time roles**, **freelance missions** and **OSS collaboration**, r
 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ![stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw?style=flat-square&label=%E2%98%85&color=090b0f&labelColor=090b0f) | [fix(cargo): cascade observability-prometheus to gateway crate](https://github.com/zeroclaw-labs/zeroclaw/pull/5758) |
 | [patrickjaja/claude-cowork-service](https://github.com/patrickjaja/claude-cowork-service) | ![stars](https://img.shields.io/github/stars/patrickjaja/claude-cowork-service?style=flat-square&label=%E2%98%85&color=090b0f&labelColor=090b0f) | Arch Linux packaging: [#1](https://github.com/patrickjaja/claude-cowork-service/pull/1), [#4](https://github.com/patrickjaja/claude-cowork-service/pull/4), [#6](https://github.com/patrickjaja/claude-cowork-service/pull/6) |
 
-In review: sandbox `capAdd` support in [openclaw#150307](https://github.com/openclaw/openclaw/pull/150307), low-level interaction endpoints in [camofox-browser#4210](https://github.com/jo-inc/camofox-browser/pull/4210), a distroless multi-arch image in [mx-chain-simulator-go#212](https://github.com/multiversx/mx-chain-simulator-go/pull/212).
+In review: a crash fix for update targets removed from the repo in [PackageKit#1044](https://github.com/PackageKit/PackageKit/pull/1044), `sudo-rs` detection as a privilege elevator in [yay#3016](https://github.com/Jguer/yay/pull/3016), network capture as an opt-in plugin in [camofox-browser#14707](https://github.com/jo-inc/camofox-browser/pull/14707), a distroless multi-arch image in [mx-chain-simulator-go#212](https://github.com/multiversx/mx-chain-simulator-go/pull/212).
 
 <br/>
 
